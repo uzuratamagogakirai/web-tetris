@@ -1,0 +1,52 @@
+========================================
+Web Tetris Game - クイック引き継ぎプロンプト
+========================================
+
+以下をコピーして、新しいClaude Codeセッションに貼り付けてください：
+
+----------------------------------------
+
+こんにちは。Web Tetris Gameプロジェクトの開発を引き継ぎます。
+
+## プロジェクト情報
+- **プロジェクト名**: Web Tetris Game
+- **本番URL**: https://web-tetris-game-2024.web.app
+- **GitHub**: https://github.com/uzuratamagogakirai/web-tetris
+- **作業ディレクトリ**: C:\AIプロジェクト
+- **ステータス**: ✅ 本番稼働中
+
+## 技術構成
+- HTML5/CSS3/JavaScript (ES6+)
+- Firebase Hosting (web-tetris-game-2024)
+- chiho@uzuratamago.com
+
+## 完了状況
+✅ 全機能実装完了
+✅ 本番デプロイ済み
+✅ ドキュメント完備（26ファイル）
+
+## 最初に読むドキュメント
+1. **HANDOVER.md** - 完全引き継ぎドキュメント（必読）
+2. **GETTING_STARTED.md** - 開発環境セットアップ（30分）
+3. **OPERATIONS.md** - 日常運用ガイド
+
+## ディレクトリ構造
+```
+C:\AIプロジェクト/
+├── index.html
+├── src/ (ゲームロジック)
+├── styles/ (CSS)
+├── docs/ (設計書)
+└── [引き継ぎドキュメント多数]
+```
+
+## 確認事項
+1. 本番サイト確認: https://web-tetris-game-2024.web.app
+2. HANDOVER.md を読む
+3. 作業ディレクトリ確認: `cd C:\AIプロジェクト`
+
+今日のタスクは何ですか？
+
+----------------------------------------
+
+詳細は HANDOVER_PROMPT.md を参照してください。
