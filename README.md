@@ -124,7 +124,25 @@ start index.html # Windows
 
 このプロジェクトはFirebase Hostingでデプロイできます。
 
-### クイックデプロイ
+### 簡単デプロイ（ヘルパースクリプト使用）
+
+#### Windows
+```bash
+deploy.bat
+```
+
+#### macOS/Linux
+```bash
+./deploy.sh
+```
+
+ヘルパースクリプトが以下を自動でチェック:
+- 環境確認（Node.js, npm, Firebase CLI）
+- ファイル確認
+- ログイン状態確認
+- デプロイタイプ選択（プレビュー/本番/ローカルテスト）
+
+### 手動デプロイ
 
 ```bash
 # 1. Firebaseにログイン
@@ -136,11 +154,18 @@ firebase projects:create
 # 3. Hostingを初期化（初回のみ）
 firebase init hosting
 
-# 4. デプロイ
+# 4. プレビューデプロイ（推奨）
+firebase hosting:channel:deploy preview
+
+# 5. 本番デプロイ
 firebase deploy --only hosting
 ```
 
-詳細な手順は [DEPLOY_STEPS.md](DEPLOY_STEPS.md) を参照してください。
+### デプロイドキュメント
+
+- 📝 [デプロイ実行手順](DEPLOY_STEPS.md) - ステップバイステップガイド
+- ✅ [デプロイチェックリスト](DEPLOY_CHECKLIST.md) - 完全なチェックリスト
+- 📋 [デプロイメント計画書](docs/deployment.md) - 詳細な計画とアーキテクチャ
 
 ## ライセンス
 
