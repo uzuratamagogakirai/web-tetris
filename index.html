@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tetris Game</title>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Tetris Game</h1>
+    </header>
+
+    <div class="game-wrapper">
+      <!-- ホールドエリア -->
+      <div class="side-panel hold-panel">
+        <h2>Hold</h2>
+        <canvas id="holdCanvas"></canvas>
+      </div>
+
+      <!-- メインゲームエリア -->
+      <div class="main-panel">
+        <canvas id="gameCanvas"></canvas>
+
+        <div class="stats">
+          <div class="stat-item">
+            <span class="stat-label">Score:</span>
+            <span class="stat-value" id="score">0</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Level:</span>
+            <span class="stat-value" id="level">1</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">Lines:</span>
+            <span class="stat-value" id="lines">0</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-label">High Score:</span>
+            <span class="stat-value" id="highScore">0</span>
+          </div>
+        </div>
+
+        <div class="controls">
+          <button id="startButton" class="btn-primary">Start Game</button>
+        </div>
+      </div>
+
+      <!-- ネクストエリア -->
+      <div class="side-panel next-panel">
+        <h2>Next</h2>
+        <canvas id="nextCanvas"></canvas>
+      </div>
+    </div>
+
+    <div class="instructions">
+      <h3>Controls</h3>
+      <div class="instruction-grid">
+        <div class="instruction-item">
+          <kbd>←</kbd><kbd>→</kbd>
+          <span>Move Left/Right</span>
+        </div>
+        <div class="instruction-item">
+          <kbd>↑</kbd>
+          <span>Rotate</span>
+        </div>
+        <div class="instruction-item">
+          <kbd>↓</kbd>
+          <span>Soft Drop</span>
+        </div>
+        <div class="instruction-item">
+          <kbd>Space</kbd>
+          <span>Hard Drop</span>
+        </div>
+        <div class="instruction-item">
+          <kbd>C</kbd>
+          <span>Hold Piece</span>
+        </div>
+        <div class="instruction-item">
+          <kbd>P</kbd>
+          <span>Pause</span>
+        </div>
+        <div class="instruction-item">
+          <kbd>R</kbd>
+          <span>Restart (Game Over)</span>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <p>Made with <a href="https://github.com/uzuratamagogakirai/web-tetris" target="_blank">Claude Code</a></p>
+    </footer>
+  </div>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
