@@ -65,7 +65,9 @@ tetris/
 
 ## デモ
 
-🎮 **ライブデモ**: デプロイ準備完了（手順は [DEPLOY_STEPS.md](DEPLOY_STEPS.md) を参照）
+🎮 **ライブデモ**: https://web-tetris-game-2024.web.app
+
+Firebase Hostingで公開中！ブラウザで今すぐプレイできます。
 
 ## セットアップ
 

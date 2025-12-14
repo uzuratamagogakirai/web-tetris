@@ -6,7 +6,10 @@
       "**/.*",
       "**/node_modules/**",
       "docs/**",
-      "SETUP_GITHUB.md"
+      "**/*.md",
+      "**/*.bat",
+      "**/*.sh",
+      "firebase-debug.log"
     ],
     "headers": [
       {
