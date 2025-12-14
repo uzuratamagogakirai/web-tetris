@@ -63,6 +63,10 @@ tetris/
     └── technical.md    # 技術仕様書
 ```
 
+## デモ
+
+🎮 **ライブデモ**: デプロイ準備完了（手順は [DEPLOY_STEPS.md](DEPLOY_STEPS.md) を参照）
+
 ## セットアップ
 
 ### 必要要件
@@ -113,6 +117,30 @@ start index.html # Windows
 
 - [基本設計書](docs/design.md)
 - [技術仕様書](docs/technical.md)
+- [デプロイメント計画書](docs/deployment.md)
+- [デプロイ実行手順](DEPLOY_STEPS.md)
+
+## デプロイメント
+
+このプロジェクトはFirebase Hostingでデプロイできます。
+
+### クイックデプロイ
+
+```bash
+# 1. Firebaseにログイン
+firebase login
+
+# 2. プロジェクトを作成（初回のみ）
+firebase projects:create
+
+# 3. Hostingを初期化（初回のみ）
+firebase init hosting
+
+# 4. デプロイ
+firebase deploy --only hosting
+```
+
+詳細な手順は [DEPLOY_STEPS.md](DEPLOY_STEPS.md) を参照してください。
 
 ## ライセンス
 

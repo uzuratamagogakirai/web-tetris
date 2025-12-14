@@ -39,3 +39,8 @@ logs/
 # Test coverage
 coverage/
 .nyc_output/
+
+# Firebase
+.firebase/
+firebase-debug.log
+.firebaserc
